@@ -29,7 +29,7 @@ export const menu_list=[
     },
     {
         menu_name:"South-Indian",
-        menu_image:"./images/idli.jpg"
+        menu_image:"./images/idli.jpeg"
     },
     {
         menu_name:"Chinese",
