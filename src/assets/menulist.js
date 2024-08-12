@@ -28,11 +28,11 @@ export const menu_list=[
         menu_image:"./images/burger.jpg"
     },
     {
-        menu_name:"South-Indian",
-        menu_image:"./images/idli.jpeg"
+        menu_name:"South Indian",
+        menu_image:"./images/idli.jpg"
     },
     {
         menu_name:"Chinese",
-        menu_image:"./images/momos.jpg"
+        menu_image:"./images/momos.jpeg"
     },
 ]
