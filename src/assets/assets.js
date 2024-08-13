@@ -113,47 +113,47 @@ export const food_list=[
 },
 {
     _id:"13",
-    name:"Mushroom curry",
-    image:"/images/Mushroom.jpg",
+    name:"Spring Roll",
+    image:"/images/rolls.jpeg",
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
-    category:"salad",
+    category:"Rolls",
     rating:"5"
 },
 {
     _id:"14",
-    name:"Mushroom curry",
-    image:"/images/Mushroom.jpg",
+    name:"Paneer Roll",
+    image:"/images/roll2.jpg",
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
-    category:"salad",
+    category:"Rolls",
     rating:"5"
 },
 {
     _id:"15",
-    name:"Mushroom curry",
-    image:"/images/Mushroom.jpg",
+    name:"Besan Chilla Roll",
+    image:"/images/roll3.jpg",
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
-    category:"salad",
+    category:"Rolls",
     rating:"5"
 },
 {
     _id:"16",
-    name:"Mushroom curry",
-    image:"/images/Mushroom.jpg",
+    name:"Paneer Salad",
+    image:"/images/salad2.jpg",
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
-    category:"salad",
+    category:"Salad",
     rating:"5"
 },
 {
     _id:"17",
     name:"Mushroom curry",
-    image:"/images/Mushroom.jpg",
+    image:"/images/salad3.jpg",
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
-    category:"salad",
+    category:"Salad",
     rating:"5"
 },
 {
