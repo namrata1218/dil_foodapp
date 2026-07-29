@@ -1,0 +1,46 @@
+.home-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px auto 0;
+  max-width: 1200px;
+  padding: 0 16px;
+}
+
+.home-filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-chip {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #1f2937;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-chip.active {
+  background: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.clear-filters {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #4b5563;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 14px;
+}
+
+.clear-filters:hover {
+  color: #111827;
+}

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { motion } from 'framer-motion';
 import "./Cart.css";
 import { StoreContext } from "../../context/StoreContext"
 import { useNavigate } from 'react-router-dom';
@@ -6,7 +7,13 @@ const Cart = () => {
   const { cartItems, food_list, removeFromCart,getTotalCartAmount } = useContext(StoreContext);
   const navigate= useNavigate();
   return (
-    <div className='cart'>
+    <motion.div
+      className='cart'
+      data-aos="fade-up"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
       <div className="cart-items">
         <div className="cart-item-title">
           <p>Items</p>
@@ -18,27 +25,38 @@ const Cart = () => {
         </div>
         <br />
         <hr />
-        {food_list.map((item, index) => {
+        {food_list.map((item) => {
           if (cartItems[item._id] > 0) {
             return (
-              <div>
+              <motion.div
+                key={item._id}
+                className="cart-row"
+                whileHover={{ scale: 1.01 }}
+                transition={{ duration: 0.2 }}
+              >
                 <div className="cart-item-title cart-item-item">
                   <img src={item.image} alt={item.name} />
                   <p>{item.name}</p>
                   <p>${item.price}</p>
-                  <p>{cartItems[item._id]}</p>
+                  <p className="cart-item-quantity">{cartItems[item._id]}</p>
                   <p>${item.price * cartItems[item._id]}</p>
                   <p onClick={()=>removeFromCart(item._id)} className='cross-icon'>x</p>
                 </div>
                 <hr />
-              </div>
-
+              </motion.div>
             )
           }
+          return null;
         })}
       </div>
           <div className="cart-bottom">
-            <div className="cart-total">
+            <motion.div
+              className="cart-total"
+              data-aos="fade-left"
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+            >
               <h2>Cart Totals</h2>
               <div>
               <div className="car-total-details">
@@ -56,9 +74,21 @@ const Cart = () => {
                 <b>${getTotalCartAmount()===0?0:getTotalCartAmount()+2}</b>
               </div>
               </div>
-              <button onClick={()=>navigate('/order')}>PROCEED TO CHECKOUT</button>
-            </div>
-            <div className="cart-promocode">
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                onClick={()=>navigate('/order')}
+              >
+                PROCEED TO CHECKOUT
+              </motion.button>
+            </motion.div>
+            <motion.div
+              className="cart-promocode"
+              data-aos="fade-right"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, delay: 0.15 }}
+            >
               <div>
                 <p>If you have a promocode, Enter it here</p>
                 <div className='cart-promocode-input'>
@@ -66,9 +96,9 @@ const Cart = () => {
 <button>Submit</button>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-    </div>
+    </motion.div>
   )
 }
 

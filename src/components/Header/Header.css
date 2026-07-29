@@ -19,6 +19,34 @@
     left: 6vw;
     animation: fadeIn 3s;
 }
+.header-status{
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.header-status div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(0,0,0,0.26);
+    backdrop-filter: blur(8px);
+}
+.header-status span{
+    opacity: 0.85;
+    font-size: 0.85rem;
+}
+.header-status strong{
+    font-size: 1.05rem;
+}
 .header-content h2{
     font-weight: 500;
     color: white;
