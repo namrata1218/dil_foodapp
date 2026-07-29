@@ -3,6 +3,8 @@ export const StoreContext=createContext(null)
 import { food_list } from "../assets/assets";
 const StoreContextProvider=(props)=>{
     const[cartItems, setCartItems]=useState({});
+    const[favItems, setFavItems]=useState({});
+    const[searchTerm, setSearchTerm]=useState('');
     const addToCart=(itemId)=>{
         if(!cartItems[itemId]){
             setCartItems((prev)=>({...prev,[itemId]:1}))
@@ -15,6 +17,16 @@ const StoreContextProvider=(props)=>{
     const removeFromCart=(itemId)=>{
         setCartItems((prev)=>({...prev, [itemId]:prev[itemId]-1}))
 
+    }
+    const toggleFavorite=(itemId)=>{
+        setFavItems((prev)=>{
+            if(prev[itemId]){
+                const updated = {...prev};
+                delete updated[itemId];
+                return updated;
+            }
+            return {...prev, [itemId]: true};
+        })
     }
    const getTotalCartAmount=()=>{
     let totalAmount=0;
@@ -29,13 +41,21 @@ const StoreContextProvider=(props)=>{
     return totalAmount;
 
 }
+
+    const favoriteList = food_list.filter((item) => favItems[item._id]);
         
     const contextValue={
          food_list,
          cartItems,
          setCartItems,
-          addToCart,
+         favItems,
+         setFavItems,
+         favoriteList,
+         searchTerm,
+         setSearchTerm,
+         addToCart,
          removeFromCart,
+         toggleFavorite,
          getTotalCartAmount
     }
 

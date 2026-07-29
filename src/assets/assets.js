@@ -7,7 +7,10 @@ export const food_list=[
     price:12,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Salad",
-    rating:"4"
+    rating:"4",
+    isVeg:true,
+    cuisine:"Italian",
+    fastDelivery:false
 
 },
 
@@ -18,7 +21,10 @@ export const food_list=[
     price:15,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Salad",
-     rating:"5"
+    rating:"5",
+    isVeg:false,
+    cuisine:"American",
+    fastDelivery:true
 },
 
 {
@@ -28,7 +34,10 @@ export const food_list=[
     price:25,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Salad",
-     rating:"4"
+    rating:"4",
+    isVeg:false,
+    cuisine:"American",
+    fastDelivery:false
 },
 {
     _id:"4",
@@ -37,7 +46,10 @@ export const food_list=[
     price:9,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-     rating:"3"
+    rating:"3",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:true
 },
 {
     _id:"5",
@@ -46,7 +58,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Desserts",
-     rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"American",
+    fastDelivery:false
 },
 {
     _id:"6",
@@ -55,7 +70,10 @@ export const food_list=[
     price:8,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Pizza",
-     rating:"5"
+    rating:"5",
+    isVeg:false,
+    cuisine:"Italian",
+    fastDelivery:true
 },
 {
     _id:"7",
@@ -64,7 +82,10 @@ export const food_list=[
     price:15,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Pizza",
-     rating:"5"
+    rating:"5",
+    isVeg:false,
+    cuisine:"Italian",
+    fastDelivery:false
 },
 {
     _id:"8",
@@ -73,7 +94,10 @@ export const food_list=[
     price:18,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Sandwich",
-     rating:"5"
+    rating:"5",
+    isVeg:false,
+    cuisine:"Italian",
+    fastDelivery:true
 },
 {
     _id:"9",
@@ -82,7 +106,10 @@ export const food_list=[
     price:25,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Sandwich",
-     rating:"5"
+    rating:"5",
+    isVeg:false,
+    cuisine:"American",
+    fastDelivery:false
 },
 {
     _id:"10",
@@ -91,7 +118,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:true
 },
 {
     _id:"11",
@@ -100,7 +130,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Rolls",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"Chinese",
+    fastDelivery:true
 },
 {
     _id:"12",
@@ -109,7 +142,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:false
 },
 {
     _id:"13",
@@ -118,7 +154,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Rolls",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"Chinese",
+    fastDelivery:true
 },
 {
     _id:"14",
@@ -127,7 +166,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Rolls",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:true
 },
 {
     _id:"15",
@@ -136,7 +178,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Rolls",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:false
 },
 {
     _id:"16",
@@ -145,7 +190,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:false
 },
 {
     _id:"17",
@@ -154,7 +202,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"Salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"Chinese",
+    fastDelivery:false
 },
 {
     _id:"18",
@@ -163,7 +214,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:false
 },
 {
     _id:"19",
@@ -172,7 +226,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"North Indian",
+    fastDelivery:false
 },
 {
     _id:"20",
@@ -181,7 +238,10 @@ export const food_list=[
     price:20,
     description:"Food provide essential nutrients for overall health and well-being",
     category:"salad",
-    rating:"5"
+    rating:"5",
+    isVeg:true,
+    cuisine:"Italian",
+    fastDelivery:false
 },
 
 ]
